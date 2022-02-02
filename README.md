@@ -19,6 +19,7 @@ Resume Builder
 
 This Project is for creating your own personal resume or **just try the app** by going to this. <h3>[Go To The App](https://tanmayresumebuild.herokuapp.com/login)</h3>
 
+![Resume-Builder](https://media.giphy.com/media/oxJ23jvAOfnErsw0dt/giphy.gif)
 
 ### Built With
 * [Ruby](https://www.ruby-lang.org/en/)
