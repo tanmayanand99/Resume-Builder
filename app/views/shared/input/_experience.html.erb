@@ -1,0 +1,13 @@
+<%= render 'shared/edit_sub_section' do %>
+    <%= experience.text_field :company_name, value: experience.object.company_name, placeholder: "Company" %><br/>
+    <%= experience.text_field :job_title, value: experience.object.job_title, placeholder: "Job Title" %><br/>
+    <%= experience.date_field :start, value: experience.object.start, placeholder: "Start date" %><br/>
+    <%= experience.date_field :end, value: experience.object.end, placeholder: "End date" %><br/>
+    <%= experience.text_area :description, value: experience.object.description, placeholder: "Description" %><br/>
+    <h4 class="md:border-r border-gray-300 w-80 text-xl font-semibold pt-4"> Project: </h4>
+    <%= experience.fields_for :projects do |project| %>
+        <%= render 'shared/input/project', project: project %>
+        <%= render 'shared/input/buttons/delete', type: experience %>
+    <%end %>
+
+<% end %>

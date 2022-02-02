@@ -1,0 +1,7 @@
+<%= render 'shared/edit_sub_section' do %>
+        <%= project.text_field :name, value: project.object.name, placeholder: "Name" %><br/>
+        <%= project.text_field :description, value: project.object.description, placeholder: "Description" %><br/>
+        <%= project.date_field :start, value: project.object.start, placeholder: "Start date" %><br/>
+        <%= project.date_field :end, value: project.object.end, placeholder: "End date" %><br/>
+        <%= render 'shared/input/buttons/delete', type: project %>
+<% end %>
