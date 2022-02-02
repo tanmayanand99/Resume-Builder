@@ -7,3 +7,4 @@ class ExperiencesController < ApplicationController
       flash[:success] = "Experience added."
       redirect_to edit_url
   end
+end
