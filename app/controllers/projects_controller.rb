@@ -6,3 +6,4 @@ class ProjectsController < ApplicationController
     flash[:success] = "Project added."
     redirect_to edit_url
   end
+end
